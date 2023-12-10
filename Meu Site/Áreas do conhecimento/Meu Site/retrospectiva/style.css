@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif, 'Roboto' ;
+    background-color: #4b7cc9;
+}
+
+.timeLine{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+}
+.timeLine::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c3c3c3;
+}
+.timeLine ul{
+
+    margin: 0;
+    padding: 0;
+}
+.timeLine ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeLine ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeLine ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+
+.content{
+    padding-bottom: 20px;
+}
+
+.timeLine ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #5c5a5a;
+}
+
+.timeLine ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #5c5a5a;
+}
+
+.timeLine ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #000;
+}
+
+.timeLine ul li p{
+    margin: 10px 0 0;
+    padding:0; 
+}
+
+.timeLine ul li.time h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+} 
+
+.timeLine ul li:nth-child(odd) .time{
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #d3d0d0;
+    color: #000;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px #5c5a5a;
+}
+.timeLine ul li:nth-child(even) .time{
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #d3d0d0;
+    color: #000;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px #5c5a5a;
+} 
